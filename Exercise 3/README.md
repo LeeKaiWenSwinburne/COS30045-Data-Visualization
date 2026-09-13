@@ -43,7 +43,11 @@ The website presents these insights through visualisations and explanatory text 
 
 The dataset used in this project contains information about **television models and their energy consumption characteristics**, including power usage, screen size, technology type, and efficiency ratings.
 
-The dataset was provided as part of the course materials.
+The dataset was provided as part of the course materials.  
+
+Storyboard 1 contained information about how many models does each tv size have. This storyboard contains only the screensize data 
+
+Storyboard 2 contained information about finding the average energy cost between small, medium and large TVs. This storyboarc contains only Brand_Reg, Model_No, screensize, Screen_tech and Labelled energy consumption.
 
 ### Data Processing
 
@@ -53,9 +57,15 @@ Before creating visualisations, the dataset was processed to ensure it was suita
 - Selecting relevant attributes for visualisation
 - Organising the data into formats suitable for web visualisation
 
+Storyboard 1 ensured that only the required data value is listed which is the screensize. During storyboard 1, the value of the screensize is also converted to screensize_inch under a new column for itself. This conversion happened by multiplying the screensize value by 0.393701. During the creation of the histogram for storyboard 1, only the screensize vaue is used.
+
+Storyboard 2 contains the same value from storyboard 1 such as the screensize and screensize_inch, while also having selected value such as Brand_Reg, Model_No and labelled energy consumption. In order to classify the Tvs sizes between small, medium and large, screensize_inch value under 43 is considered small, value equal or above 44 and being equal or lower than 65 is considered medium, and value larger than 66 is considered large. A visualtion of the Tv sizes is created as a bar chart by creating means for energy consumption. 
+
 ### Privacy
 
 The dataset does not contain any **personal or sensitive information**. It focuses solely on product specifications and energy consumption data related to television devices.
+
+Storyboard 1 is focused solely on figuring out the models number that each tv sizes have, while storyboard 2 is focused solely on finding the energy cost between three different tv sizes such as small, medium and large. 
 
 ### Accuracy and Limitations
 
@@ -67,6 +77,8 @@ While the dataset provides useful information about TV energy consumption, there
 
 These factors should be considered when interpreting the visualisations.
 
+Storyboard 1 only contained screensize while the calculation required the tv screen in inches value. Storyboard 2 did not contain any data about the screensize_category and required us to code converting screensize_inch to determine the screensize_category. 
+
 ### Ethics
 
 When presenting data visualisations, it is important to ensure that the information is represented **accurately and responsibly**.
@@ -76,6 +88,10 @@ This project follows ethical data visualisation practices by:
 - Avoiding misleading visual representations
 - Clearly explaining the context of the data
 - Presenting information transparently so viewers can interpret the results correctly
+
+Storyboard 1 created a proper visualisation that allowed readers to understand the exact screensize value and the exact frequency for each screensize. 
+
+Storyboard 2 created a proper visualisation that shows the three different tv screensize and the energy cost that each tv screensize consume. 
 
 ---
 
@@ -89,6 +105,7 @@ Artificial Intelligence (AI) tools may have been used to assist with aspects of 
 
 All AI-generated assistance was reviewed, modified where necessary, and integrated responsibly into the project.
 
+AN AI tool called copilot assisted me with generating an example code for determining the screensize_category based on the value of the screensize_inch. This was listed in the GEN AI reported that was submitted containing evidence and explanation. 
 ---
 
 ## Website Storytelling
