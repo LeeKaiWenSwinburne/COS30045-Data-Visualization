@@ -44,7 +44,7 @@
   </footer>
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
 
@@ -139,18 +139,6 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-}
-
-.svg-container {
-  width: 100%;          /* take full width of parent */
-  max-width: 400px;     /* optional: limit maximum size */
-  margin: 0 auto;       /* center horizontally */
-}
-
-.responsive-svg {
-  width: 100%;          /* scales with container width */
-  height: auto;         /* keeps aspect ratio */
-  display: block;       /* removes inline spacing */
 }
 
 
