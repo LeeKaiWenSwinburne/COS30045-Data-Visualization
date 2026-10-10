@@ -1,0 +1,82 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #004d40; /* Adjust to match logo colors */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+nav .logo img {
+  height: 40px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  background-color: #00796b;
+  border-radius: 5px;
+}
+
+nav ul li a.active {
+  background-color: #26a69a;
+  border-radius: 5px;
+}
+
+/* FAQ Accordion */
+.accordion {
+  background-color: #26a69a;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  margin-top: 5px;
+}
+
+.panel {
+  display: none;
+  padding: 10px;
+  background-color: #e0f2f1;
+}
+
+/* Footer */
+footer {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.responsive-svg-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1600px;
+}

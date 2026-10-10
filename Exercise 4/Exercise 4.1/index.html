@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Television Energy Consumption Comparison</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="logo"><img src="PowerIcon.png" alt="Power Logo"></a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="televisions.html">Televisions</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Television Energy Consumption</h1>
+    <p>This is the Home page</p>
+    <p>Placeholder content about TV energy usage in Australia.</p>
+
+    <!-- Side-by-side SVGs -->
+    <div class="comparison-container">
+      <div class="svg-side left">
+        <!-- Left SVG (triangular roof) -->
+        <svg width="500" height="400">
+          <rect x="0" y="0" width="500" height="400" fill="lightblue"/>
+          <circle cx="450" cy="60" r="40" fill="yellow"/>
+          <rect x="0" y="300" width="500" height="100" fill="green"/>
+          <rect x="150" y="180" width="200" height="120" fill="sienna" stroke="black"/>
+          <polygon points="150,180 250,100 350,180" fill="peru" stroke="black"/>
+          <rect x="230" y="240" width="40" height="60" fill="burlywood" stroke="black"/>
+          <circle cx="265" cy="270" r="4" fill="black"/>
+          <g fill="white" stroke="black">
+            <rect x="170" y="200" width="40" height="40"/>
+            <rect x="290" y="200" width="40" height="40"/>
+          </g>
+          <path d="M250 300 Q240 340 200 400 Q300 400 260 340 Z" fill="khaki"/>
+          <rect x="80" y="220" width="20" height="80" fill="saddlebrown"/>
+          <circle cx="90" cy="200" r="40" fill="forestgreen"/>
+          <text x="370" y="220" font-size="20" fill="black">House A</text>
+        </svg>
+      </div>
+
+      <div class="svg-side right">
+        <!-- Right SVG (flat roof) -->
+        <svg width="500" height="400">
+          <rect x="0" y="0" width="500" height="400" fill="lightblue"/>
+          <circle cx="450" cy="60" r="40" fill="yellow"/>
+          <rect x="0" y="300" width="500" height="100" fill="green"/>
+          <rect x="150" y="180" width="200" height="120" fill="sienna" stroke="black"/>
+          <rect x="150" y="100" width="200" height="80" fill="peru" stroke="black"/>
+          <rect x="230" y="240" width="40" height="60" fill="burlywood" stroke="black"/>
+          <circle cx="265" cy="270" r="4" fill="black"/>
+          <g fill="white" stroke="black">
+            <rect x="170" y="200" width="40" height="40"/>
+            <rect x="290" y="200" width="40" height="40"/>
+          </g>
+          <path d="M250 300 Q240 340 200 400 Q300 400 260 340 Z" fill="khaki"/>
+          <rect x="80" y="220" width="20" height="80" fill="saddlebrown"/>
+          <circle cx="90" cy="200" r="40" fill="forestgreen"/>
+          <text x="370" y="220" font-size="20" fill="black">House B</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Comparison Table -->
+<!-- Comparison Table -->
+<table class="comparison-table">
+  <tr>
+    <th>Feature</th>
+    <th>House A (Left)</th>
+    <th>House B (Right)</th>
+  </tr>
+  <tr>
+    <td>Roof Style</td>
+    <td>
+      Triangular roof<br>
+      <code>&lt;polygon points="150,180 250,100 350,180" fill="peru" stroke="black"/&gt;</code>
+    </td>
+    <td>
+      Flat roof<br>
+      <code>&lt;rect x="150" y="100" width="200" height="80" fill="peru" stroke="black"/&gt;</code>
+    </td>
+  </tr>
+  <tr>
+    <td>Label Text</td>
+    <td>
+      <code>&lt;text x="370" y="220" font-size="20" fill="black"&gt;House A&lt;/text&gt;</code>
+    </td>
+    <td>
+      <code>&lt;text x="370" y="220" font-size="20" fill="black"&gt;House B&lt;/text&gt;</code>
+    </td>
+  </tr>
+  <tr>
+    <td>Overall Look</td>
+    <td>Classic cottage style</td>
+    <td>Modern boxy style</td>
+  </tr>
+</table>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Kai | Built with help from GenAI</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

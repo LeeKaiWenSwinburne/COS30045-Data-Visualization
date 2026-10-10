@@ -56,7 +56,7 @@ svg.append("rect")
   .attr("height", 50)
   .attr("fill", "blue");
 
-d3.csv("data/new dataset.csv", d => {
+d3.csv("data/new_dataset.csv", d => {
   return {
     brand: d.brand,      
     count: +d.count      
